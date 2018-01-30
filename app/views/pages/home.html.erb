@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Alpha-Blog</title>
+
+    <style>
+    
+        body {
+            color: white;
+            text-align: center;
+            background: linear-gradient(black, darkred) no-repeat; background-size:2160px 800px;
+           
+        }
+        .column {
+            float: left;
+            width: 48%;
+            padding: 10px;
+             
+        }
+        .box {
+            text-align:left        
+        }
+
+        /* Clear floats after the columns */
+       .row:after {
+           content: "";
+           display: table;
+           clear: both;
+        }
+    
+    </style>
+</head>
+<body>
+
+    <h1>The Alpha-Blog</h1>
+    <p>This is the home page of my alpha-blog.</p>
+        <br/>
+    <div class="row">
+      <div class="column" >
+            <h2>Column 1</h2>
+                <div class="box">
+                    <p>This is the initial home page of my alpha-blog project for "The Complete Ruby On Rails Developer" course from Udemy.com </p>
+            </div>
+      </div>
+      <div class="column" >
+        <h2>Column 2</h2>
+            <div class="box">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed cursus consectetur nunc, non porttitor leo faucibus at. Aenean eget consectetur enim. Mauris ornare malesuada tortor eget auctor. Nulla auctor hendrerit odio, eget aliquet justo feugiat non. Donec id elementum metus. Donec rhoncus, turpis vel accumsan porta, mauris eros fringilla lectus, eu suscipit enim metus id nibh. Suspendisse varius, libero et pulvinar accumsan, tellus ligula vulputate magna, eu accumsan ligula orci in libero.</p>
+            </div>
+      </div>
+      </div>
+
+    <footer>
+        <p>This page was made by: Karl Magsig, Web programming guru in training.</p>
+        <%= link_to 'To the About page', about_path %>
+
+    </footer>
+
+</body>
+</html>
+
